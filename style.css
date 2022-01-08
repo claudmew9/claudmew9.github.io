@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+        "navigation"
+        "banner";
+    height: 100vh;
+
+}
+
+.banner {
+    grid-area: banner;
+    max-height: 50vh;
+    background: #2B303E;
+    background-image: url(images/banner-background.svg);
+}
+
+.banner-text {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 9vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.claudine {
+    font-weight: 700;
+}
+
+.yuen {
+    font-weight: 100;
+    border-bottom: 2px white solid;
+}
+
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    align-items: center;
+    max-height: 50vh;
+}
+
+.navigation-grid {
+    display: grid;
+    height: 30vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 4px;
+    grid-template-areas: 
+        "about projects contact";
+    background-color: #2B303E;
+    font-size: calc(12px + 1.5vw);
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.about a, .projects a, .contact a {
+    color: black;
+    background-color: white;
+    width: 28vw;
+    text-align: center;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+.about a:hover {
+    background-color: #AA83A4;
+    color: white;
+}
+
+.projects a:hover {
+    background-color: #B1575F;
+    color: white;
+}
+
+.contact a:hover {
+    background-color: #77997D;
+    color: white;
+}
+
+.projects {
+    grid-area: projects;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.contact {
+    grid-area: contact;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
