@@ -23,7 +23,7 @@ body {
     grid-area: banner;
     max-height: 50vh;
     background: #2B303E;
-    background-image: url(images/banner-background.svg);
+    background-image: url(../images/banner-background.svg);
 }
 
 .banner-text {
