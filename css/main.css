@@ -120,3 +120,79 @@ body {
     height: 100%;
     background-color: white;
 }
+
+/* Page Layout */
+.page-grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: 
+        "page-navbar page-content";
+}
+
+.page-navbar {
+    grid-area: page-navbar;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+        "navbar-header"
+        "navbar-elements"
+        "navbar-footer";
+
+    background-color: #2B303E;
+    color: white;
+    padding-left: 10px;
+}
+
+.navbar-header {
+    grid-area: navbar-header;
+}
+
+.header-claudine {
+    margin: 10px 0px 0px 0px;
+    font-size: calc(14px + 0.5vw);
+}
+
+.header-yuen {
+    margin: 5px 0px 0px 0px;
+    font-size: calc(14px + 0.5vw);
+}
+
+.navbar-elements {
+    grid-area: navbar-elements;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar-elements ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-elements li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navbar-elements ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: calc(12px + 0.5vw);
+}
+
+.navbar-footer {
+    grid-area: navbar-footer;
+}
+
+.page-content {
+    grid-area: page-content;
+}
