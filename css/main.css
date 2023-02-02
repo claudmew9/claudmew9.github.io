@@ -209,7 +209,16 @@ body {
     border-radius: 10px;
     width: 70%;
     max-width: 1000px;
-    background-color: white;;
+    background-color: white;
+}
+
+/* Media Query for devices under 600px in width */
+@media only screen and (max-width: 600px) {
+    .page-content {
+        margin: 0;
+        width: auto;
+        border-radius: 0;
+    }
 }
 
 .full-page-content {
