@@ -307,3 +307,47 @@ hr.entry {
     margin: 0 auto;
     width: 100%
 }
+
+.projects-headings h2 {
+    margin-bottom: 0px;
+}
+
+.projects-headings h3 {
+    margin-top: 0px;
+    font-weight: 400;
+    color: #4C566A;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 46%;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-item-large {
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-item-small {
+    width: 30%;
+    padding: 4px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery video {
+    width: 100%;
+    height: auto;
+}
